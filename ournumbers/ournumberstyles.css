@@ -1,0 +1,78 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #322654;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p.description {
+    font-family: 'Barlow', sans-serif;
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 90%;
+    line-height: 1.5;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+    max-width: 0;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 2px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr; 
+        gap: 2px;
+    }
+}
+
+.box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border-radius: 0;
+    width: 100px; 
+    height: 100px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.number {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.label {
+    font-size: 0.9em;
+    text-align: center;
+}
